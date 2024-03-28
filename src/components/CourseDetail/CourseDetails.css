@@ -1,0 +1,13 @@
+.price-button {
+    background: rgb(55, 0, 255);
+    background: linear-gradient(328deg, rgba(55, 0, 255, 1) 0%, rgba(0, 0, 0, 0.7682423311121324) 100%);
+}
+
+.my-button-1 {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(328deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7682423311121324) 100%);
+}
+.my-button-1:hover{
+    background: rgb(47, 47, 47);
+    background: linear-gradient(328deg, rgb(37, 37, 37) 0%, rgba(35, 35, 35, 0.768) 100%);
+}

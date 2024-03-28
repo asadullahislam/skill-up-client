@@ -1,0 +1,9 @@
+.side-nav-list {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.side-nav-list:hover {
+    padding-left: 15px;
+}
