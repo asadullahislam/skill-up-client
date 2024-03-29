@@ -42,35 +42,51 @@ const Register = () => {
         form.reset()
     }
     return (
-        <Container className='mt-5'>
-            <Row>
-                <Col>
+        <div className='mt-5'>
+            <div>
+                <div>
                     <Form onSubmit={handleRegister} className='my-form bg-dark text-white p-4 mx-auto rounded-3 shadow mb-5' >
                         <h3 className='text-center fw-bold'>Create An Account</h3>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Your Name</Form.Label>
-                            <Form.Control required name='name' type="text" placeholder="Your Full Name" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control required name='email' type="email" placeholder="Enter email" />
-                            <Form.Text className="text-muted">
-                                We'll never share your email with anyone else.
-                            </Form.Text>
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Photo URL</Form.Label>
-                            <Form.Control required name='photoURL' type="link" placeholder="Your Photo Url" />
-                        </Form.Group>
 
-                        <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control required name='password' type="password" placeholder="Password" />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Confirm Password</Form.Label>
-                            <Form.Control required name='confirmPassword' type="password" placeholder="Re-Type Password" />
-                        </Form.Group>
+
+
+                        <label className="form-control w-full mx-auto max-w-xs text-center ">
+                            <div className="label">
+                                <span className="label-text">Your Name</span>
+                            </div>
+                            <input required name='name' type="text" placeholder="Your Full Name" className="input input-bordered w-full text-black max-w-xs" />
+                        </label>
+                        <label className="form-control w-full mx-auto max-w-xs text-center ">
+                            <div className="label">
+                                <span className="label-text">Email address</span>
+                            </div>
+                            <input required name='email' type="email" placeholder="Enter email" className="input input-bordered w-full text-black max-w-xs" />
+                        </label>
+
+                        <label className="form-control text-black w-full mx-auto max-w-xs text-center ">
+                            <div className="label">
+                                <span className="label-text">Photo URL</span>
+                            </div>
+                            <input required name='photoURL' type="link" placeholder="Your Photo Url" className="input input-bordered text-black w-full max-w-xs" />
+                        </label>
+
+                        <label className="form-control w-full mx-auto max-w-xs text-center ">
+                            <div className="label">
+                                <span className="label-text">Password</span>
+                            </div>
+                            <input required name='password' type="password" placeholder="Password" className="input input-bordered text-black w-full max-w-xs" />
+                        </label>
+
+                        <label className="form-control w-full mx-auto max-w-xs text-center ">
+                            <div className="label">
+                                <span className="label-text">Confirm Password</span>
+                            </div>
+                            <input required name='confirmPassword' type="password" placeholder="Re-Type Password" className="input text-black input-bordered w-full max-w-xs" />
+                        </label>
+
+
+
+
                         {
                             error ?
                                 <div className='py-2 bg-light text-danger text-center rounded'>
@@ -84,10 +100,10 @@ const Register = () => {
                             Register
                         </Button>
                     </Form>
-                </Col>
-            </Row>
-            
-        </Container>
+                </div>
+            </div>
+
+        </div>
     );
 };
 

@@ -44,14 +44,14 @@ export const routs = createBrowserRouter([
                     },
                     {
                         path: '/courses/course/:courseId',
-                        loader: async ({ params }) => fetch(`https://skill-up-server-flax.vercel.app/course/${params.courseId}`),
+                        loader: async ({ params }) => fetch(`https://skill-server-blue.vercel.app/course/${params.courseId}`),
                         element: <CourseDetail></CourseDetail>
                     }
                 ]
             },
             {
                 path: '/courses/course/:courseId/purchase',
-                loader: async ({ params }) => fetch(`https://skill-up-server-flax.vercel.app/course/${params.courseId}`),
+                loader: async ({ params }) => fetch(`https://skill-server-blue.vercel.app/${params.courseId}`),
                 element: <PrivateRoute><Purchase></Purchase></PrivateRoute>
             },
             {

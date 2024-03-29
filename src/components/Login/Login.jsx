@@ -64,30 +64,30 @@ const Login = () => {
 
     }
     return (
-        <Container className='mt-5'>
-            <Row>
-                <Col>
-                    <Form onSubmit={handleLogin} className='my-form bg-dark text-white p-4 mx-auto rounded-3 shadow mb-5'>
+        <div className='mt-5'>
+            <div>
+                <div>
+                    <Form onSubmit={handleLogin} className='w-1/2 text-white p-4 mrounded-3 shadow mb-5 mx-auto'>
                         <h3 className='text-center'>Log In</h3>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control name='email' type="email" placeholder="Enter email" />
-                            <Form.Text className="text-muted">
-                                We'll never share your email with anyone else.
-                            </Form.Text>
-                        </Form.Group>
+                        <label className="form-control w-full mx-auto max-w-xs text-center ">
+                            <div className="label">
+                                <span className="label-text">Email address</span>
+                            </div>
+                            <input name='email' type="email" placeholder="Enter email" className="input input-bordered text-black w-full max-w-xs" />
+                        </label>
+                        <label className="form-control w-full mx-auto max-w-xs">
+                            <div className="label">
+                                <span className="label-text">Password</span>
+                            </div>
+                            <input name='password' type="password" placeholder="Password" className="input input-bordered w-full max-w-xs text-black" />
+                        </label>
 
-                        <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control name='password' type="password" placeholder="Password" />
-                        </Form.Group>
-                        <Form.Text className='d-block'>
-                            <small> Didn't have a Account? <Link to='/register'>Create New.</Link></small>
-                        </Form.Text>
 
-                        <Button variant="primary" type="submit" className='w-100 my-3'>
+
+                        <button className="btn btn-success" type="submit">  Log in</button>
+                        {/* <Button variant="primary" type="submit" className='w-100 my-3'>
                             Log in
-                        </Button>
+                        </Button> */}
                         {
                             error ?
                                 <div className='py-2 bg-light text-danger text-center rounded'>
@@ -102,9 +102,9 @@ const Login = () => {
                         <Button className='w-100 rounded-0 py-3 border border-0 login-btn' onClick={handleGoogleLogIn} > <FaGoogle />  Sign in with Google</Button>
                         <Button className='w-100 rounded-0 py-3 mt-3 border border-0 login-btn' onClick={handleGitHubLogIn} > <FaGithub />  Sign in with GitHub</Button>
                     </Form>
-                </Col>
-            </Row>
-        </Container>
+                </div>
+            </div>
+        </div>
     );
 };
 

@@ -1,10 +1,11 @@
-import React, { useContext } from 'react';
+
 import { Link } from 'react-router-dom';
 
-import { ListGroupItem } from 'react-bootstrap';
+
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
-import { FaChevronRight } from "react-icons/fa";
+
 import "./SideNav.css";
+import { useContext } from 'react';
 
 const SideNav = () => {
     const { courses } = useContext(AuthContext);
